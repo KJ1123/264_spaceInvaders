@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space Invaders</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div id="startingScene">
+        <img id="startingImage" src="images/StartingScene.webp" alt="Space Invaders">
+        <button id="playButton">Play Game</button>
+      </div>
+    <div class="center-container hidden">
+        <h1>Space Invaders</h1>
+        <div class="score-lives-container">
+            <h2 class="score">Score</h2>
+            <h2 class="lives">Lives</h2>
+        </div>
+    </div>
+    <div class="grid">
+        <canvas id="gameCanvas"></canvas>
+    </div>   
+    <div id="gameOverScreen" style="display: none;">
+        <img src="images/game-over.jpg" alt="Game Over" />
+        <h1 id="gameOverMessage"></h1>
+      </div>
+    <script src="scripts.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "SpaceInvaders1";
+    src: url("fonts/MachineStd-Bold.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "SpaceInvaders2";
+    src: url("fonts/space_invaders.otf") format("truetype");
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    background-image: url('images/space.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; 
+}
+
+h1 {
+    color: white;
+    font-family: "SpaceInvaders1", sans-serif;
+    text-align: center;
+    font-size: 50px; 
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h2 {
+    color: white;
+    font-family: "SpaceInvaders2", sans-serif;
+    margin-top: 0px;
+}
+  
+.score-lives-container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+}
+  
+.score,
+.lives {
+    flex-basis: 50%;
+}
+  
+.grid{
+    margin-left: 25vh;
+    margin-right: 15vh;
+    width: 80vw;
+    height: 70vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    display: block; 
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#playButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px; 
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "SpaceInvaders1", sans-serif;
+  }
+  
+.hidden {
+    display: none;
+  }
+  
+#startingImage {
+    position: relative;
+    width: 75%;
+    height: 75%;
+}
+
+#gameOverScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/space.png');
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+  }
+  
+  #gameOverScreen img {
+    width: 500px; 
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  #gameOverScreen h1 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
